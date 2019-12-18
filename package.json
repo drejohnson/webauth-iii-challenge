@@ -1,0 +1,27 @@
+{
+  "name": "webauth-iii-challenge",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "repository": "https://github.com/drejohnson/webauth-iii-challenge.git",
+  "author": "drejohnson <drejohnson212@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.mjs",
+    "server": "nodemon index.mjs",
+    "db:update": "knex migrate:latest",
+    "db:undo": "knex migrate:rollback",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.4",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
